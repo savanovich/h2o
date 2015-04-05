@@ -40,6 +40,14 @@
 		1065E70C19BF664300686E72 /* evloop.h in Headers */ = {isa = PBXBuildFile; fileRef = 1065E70419BF145700686E72 /* evloop.h */; };
 		1065E70D19BF6D4600686E72 /* uv-binding.h in Headers */ = {isa = PBXBuildFile; fileRef = 1065E70619BF14E500686E72 /* uv-binding.h */; };
 		1065E70E19BF6D9400686E72 /* uv-binding.c.h in Headers */ = {isa = PBXBuildFile; fileRef = 1065E70719BF17FE00686E72 /* uv-binding.c.h */; };
+		10756E2A1AC126420009BF57 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 10756E261AC126420009BF57 /* api.c */; };
+		10756E2B1AC126420009BF57 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 10756E271AC126420009BF57 /* dumper.c */; };
+		10756E2C1AC126420009BF57 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 10756E281AC126420009BF57 /* emitter.c */; };
+		10756E2D1AC126420009BF57 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 10756E291AC126420009BF57 /* loader.c */; };
+		10756E331AC1264D0009BF57 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 10756E2E1AC1264D0009BF57 /* parser.c */; };
+		10756E341AC1264D0009BF57 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 10756E2F1AC1264D0009BF57 /* reader.c */; };
+		10756E351AC1264D0009BF57 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 10756E301AC1264D0009BF57 /* scanner.c */; };
+		10756E361AC1264D0009BF57 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 10756E311AC1264D0009BF57 /* writer.c */; };
 		1079236A19A3210E00C52AD6 /* khash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1079232619A3210D00C52AD6 /* khash.h */; };
 		1079239619A3210E00C52AD6 /* picohttpparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 1079235A19A3210D00C52AD6 /* picohttpparser.c */; };
 		1079239719A3210E00C52AD6 /* picohttpparser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1079235B19A3210D00C52AD6 /* picohttpparser.h */; };
@@ -246,7 +254,6 @@
 		105534F61A460EF600627ECB /* 50file-config.t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "50file-config.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
 		105534F71A460F2E00627ECB /* 50mimemap.t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50mimemap.t; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
 		105534F81A460F2E00627ECB /* 50post-size-limit.t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "50post-size-limit.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
-		105534F91A460F4200627ECB /* 50reverse-proxy.t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "50reverse-proxy.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
 		105534FA1A460F4200627ECB /* 50sni.t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50sni.t; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
 		105534FB1A460F4200627ECB /* Util.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = Util.pm; sourceTree = "<group>"; };
 		105534FE1A46134A00627ECB /* 80issues61.t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 80issues61.t; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
@@ -262,6 +269,16 @@
 		1065E70419BF145700686E72 /* evloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = evloop.h; sourceTree = "<group>"; };
 		1065E70619BF14E500686E72 /* uv-binding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uv-binding.h"; sourceTree = "<group>"; };
 		1065E70719BF17FE00686E72 /* uv-binding.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "uv-binding.c.h"; sourceTree = "<group>"; };
+		10756E251AC126250009BF57 /* yaml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml.h; sourceTree = "<group>"; };
+		10756E261AC126420009BF57 /* api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = api.c; sourceTree = "<group>"; };
+		10756E271AC126420009BF57 /* dumper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dumper.c; sourceTree = "<group>"; };
+		10756E281AC126420009BF57 /* emitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = emitter.c; sourceTree = "<group>"; };
+		10756E291AC126420009BF57 /* loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loader.c; sourceTree = "<group>"; };
+		10756E2E1AC1264D0009BF57 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		10756E2F1AC1264D0009BF57 /* reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reader.c; sourceTree = "<group>"; };
+		10756E301AC1264D0009BF57 /* scanner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
+		10756E311AC1264D0009BF57 /* writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writer.c; sourceTree = "<group>"; };
+		10756E321AC1264D0009BF57 /* yaml_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yaml_private.h; sourceTree = "<group>"; };
 		1079231519A320A700C52AD6 /* libh2o.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libh2o.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1079232619A3210D00C52AD6 /* khash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khash.h; sourceTree = "<group>"; };
 		1079235A19A3210D00C52AD6 /* picohttpparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = picohttpparser.c; sourceTree = "<group>"; };
@@ -294,6 +311,20 @@
 		1079241319A324B400C52AD6 /* websocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = websocket.c; sourceTree = "<group>"; };
 		1079243519A3260E00C52AD6 /* unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unittest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1079245319A32C0800C52AD6 /* token_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token_table.h; sourceTree = "<group>"; };
+		108214FE1AAD34DD00D27E66 /* 50reverse-proxy-0.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "50reverse-proxy-0.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		108214FF1AAD418700D27E66 /* 50reverse-proxy-1.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "50reverse-proxy-1.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		108215001AAD418700D27E66 /* 50reverse-proxy-2.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "50reverse-proxy-2.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		108215011AAD418700D27E66 /* 50reverse-proxy-3.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "50reverse-proxy-3.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		108215021AAD418700D27E66 /* 50reverse-proxy-4.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "50reverse-proxy-4.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		108215031AAD418700D27E66 /* 50reverse-proxy-5.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "50reverse-proxy-5.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		108215041AAD418700D27E66 /* 50reverse-proxy-6.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "50reverse-proxy-6.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		108215051AAD418700D27E66 /* 50reverse-proxy-7.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "50reverse-proxy-7.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		108215071AAD41CE00D27E66 /* test.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; name = test.pl; path = "50reverse-proxy/test.pl"; sourceTree = "<group>"; };
+		108215081AB14B1100D27E66 /* 40server-push.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = "40server-push.t"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.perl; };
+		1082150A1AB26F2A00D27E66 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		1082150C1AB26F4700D27E66 /* FindWslay.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindWslay.cmake; sourceTree = "<group>"; };
+		1082150D1AB26F4700D27E66 /* FindLibYAML.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindLibYAML.cmake; sourceTree = "<group>"; };
+		1082150E1AB26F4700D27E66 /* FindLibUV.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindLibUV.cmake; sourceTree = "<group>"; };
 		10AA2E931A80A592004322AC /* time_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_.h; sourceTree = "<group>"; };
 		10AA2E951A80A612004322AC /* time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = time.c; sourceTree = "<group>"; };
 		10AA2E981A81F68A004322AC /* time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = time.c; sourceTree = "<group>"; };
@@ -579,9 +610,44 @@
 			path = socket;
 			sourceTree = "<group>";
 		};
+		10756E221AC125E00009BF57 /* yaml */ = {
+			isa = PBXGroup;
+			children = (
+				10756E231AC126020009BF57 /* include */,
+				10756E241AC126080009BF57 /* src */,
+			);
+			path = yaml;
+			sourceTree = "<group>";
+		};
+		10756E231AC126020009BF57 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				10756E251AC126250009BF57 /* yaml.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		10756E241AC126080009BF57 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				10756E261AC126420009BF57 /* api.c */,
+				10756E271AC126420009BF57 /* dumper.c */,
+				10756E281AC126420009BF57 /* emitter.c */,
+				10756E291AC126420009BF57 /* loader.c */,
+				10756E2E1AC1264D0009BF57 /* parser.c */,
+				10756E2F1AC1264D0009BF57 /* reader.c */,
+				10756E301AC1264D0009BF57 /* scanner.c */,
+				10756E311AC1264D0009BF57 /* writer.c */,
+				10756E321AC1264D0009BF57 /* yaml_private.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		1079230C19A320A700C52AD6 = {
 			isa = PBXGroup;
 			children = (
+				1082150B1AB26F2F00D27E66 /* cmake */,
+				1082150A1AB26F2A00D27E66 /* CMakeLists.txt */,
 				1079231E19A3210D00C52AD6 /* deps */,
 				1079239E19A3215F00C52AD6 /* include */,
 				107923AD19A3217300C52AD6 /* lib */,
@@ -614,6 +680,7 @@
 				1079231F19A3210D00C52AD6 /* klib */,
 				1079235619A3210D00C52AD6 /* picohttpparser */,
 				10F417FB19C2D2B400B6E31A /* picotest */,
+				10756E221AC125E00009BF57 /* yaml */,
 				10F417FC19C2D2BA00B6E31A /* yoml */,
 			);
 			path = deps;
@@ -716,6 +783,24 @@
 			path = examples;
 			sourceTree = "<group>";
 		};
+		108215061AAD41A000D27E66 /* 50reverse-proxy */ = {
+			isa = PBXGroup;
+			children = (
+				108215071AAD41CE00D27E66 /* test.pl */,
+			);
+			name = "50reverse-proxy";
+			sourceTree = "<group>";
+		};
+		1082150B1AB26F2F00D27E66 /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				1082150C1AB26F4700D27E66 /* FindWslay.cmake */,
+				1082150D1AB26F4700D27E66 /* FindLibYAML.cmake */,
+				1082150E1AB26F4700D27E66 /* FindLibUV.cmake */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
 		10AA2EC51AA0557A004322AC /* assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -756,6 +841,7 @@
 				10F198EB1A7ED2CC00F4585E /* 40pathconf-redirect.t */,
 				105534F51A460EF600627ECB /* 40protocol.t */,
 				104B9A311A59D7A2009EEE64 /* 40running-user.t */,
+				108215081AB14B1100D27E66 /* 40server-push.t */,
 				104B9A321A59E27A009EEE64 /* 40ssl-cipher-suite.t */,
 				104B9A221A47BBA1009EEE64 /* 40unix-socket.t */,
 				10AA2EB31A94B66D004322AC /* 40virtual-host.t */,
@@ -766,7 +852,15 @@
 				105534F71A460F2E00627ECB /* 50mimemap.t */,
 				105534F81A460F2E00627ECB /* 50post-size-limit.t */,
 				10AA2EA81A8DAFD4004322AC /* 50redirect.t */,
-				105534F91A460F4200627ECB /* 50reverse-proxy.t */,
+				108215061AAD41A000D27E66 /* 50reverse-proxy */,
+				108214FE1AAD34DD00D27E66 /* 50reverse-proxy-0.t */,
+				108214FF1AAD418700D27E66 /* 50reverse-proxy-1.t */,
+				108215001AAD418700D27E66 /* 50reverse-proxy-2.t */,
+				108215011AAD418700D27E66 /* 50reverse-proxy-3.t */,
+				108215021AAD418700D27E66 /* 50reverse-proxy-4.t */,
+				108215031AAD418700D27E66 /* 50reverse-proxy-5.t */,
+				108215041AAD418700D27E66 /* 50reverse-proxy-6.t */,
+				108215051AAD418700D27E66 /* 50reverse-proxy-7.t */,
 				104C65021A6DF36B000AC190 /* 50reverse-proxy-config.t */,
 				10AA2EB21A9479B4004322AC /* 50reverse-proxy-upstream-down.t */,
 				104B9A2B1A4BBDA4009EEE64 /* 50server-starter.t */,
@@ -1123,7 +1217,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10756E2C1AC126420009BF57 /* emitter.c in Sources */,
+				10756E2A1AC126420009BF57 /* api.c in Sources */,
+				10756E2B1AC126420009BF57 /* dumper.c in Sources */,
+				10756E2D1AC126420009BF57 /* loader.c in Sources */,
+				10756E361AC1264D0009BF57 /* writer.c in Sources */,
+				10756E351AC1264D0009BF57 /* scanner.c in Sources */,
+				10756E331AC1264D0009BF57 /* parser.c in Sources */,
 				10F417D619C190F800B6E31A /* main.c in Sources */,
+				10756E341AC1264D0009BF57 /* reader.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1886,7 +1988,6 @@
 				OTHER_LDFLAGS = (
 					"-lssl",
 					"-lcrypto",
-					"-lyaml",
 				);
 				PRODUCT_NAME = h2o;
 			};
@@ -1915,7 +2016,6 @@
 					"-lssl",
 					"-lcrypto",
 					"-luv",
-					"-lyaml",
 				);
 				PRODUCT_NAME = h2o;
 			};
@@ -1939,7 +2039,6 @@
 				OTHER_LDFLAGS = (
 					"-lssl",
 					"-lcrypto",
-					"-lyaml",
 				);
 				PRODUCT_NAME = h2o;
 			};
@@ -1964,7 +2063,6 @@
 					"-lssl",
 					"-lcrypto",
 					"-luv",
-					"-lyaml",
 				);
 				PRODUCT_NAME = h2o;
 			};

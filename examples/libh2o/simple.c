@@ -31,11 +31,12 @@
 #include "h2o/http1.h"
 #include "h2o/http2.h"
 
-static void register_handler(h2o_hostconf_t *hostconf, const char *path, int (*on_req)(h2o_handler_t *, h2o_req_t *))
+static h2o_pathconf_t *register_handler(h2o_hostconf_t *hostconf, const char *path, int (*on_req)(h2o_handler_t *, h2o_req_t *))
 {
     h2o_pathconf_t *pathconf = h2o_config_register_path(hostconf, path);
     h2o_handler_t *handler = h2o_create_handler(pathconf, sizeof(*handler));
     handler->on_req = on_req;
+    return pathconf;
 }
 
 static int chunked_test(h2o_handler_t *self, h2o_req_t *req)
@@ -62,7 +63,7 @@ static int reproxy_test(h2o_handler_t *self, h2o_req_t *req)
 
     req->res.status = 200;
     req->res.reason = "OK";
-    h2o_add_header(&req->pool, &req->res.headers, H2O_TOKEN_X_REPROXY_URL, H2O_STRLIT("http://example.com:81/bar"));
+    h2o_add_header(&req->pool, &req->res.headers, H2O_TOKEN_X_REPROXY_URL, H2O_STRLIT("http://www.google.com/"));
     h2o_send_inline(req, H2O_STRLIT("you should never see this!\n"));
 
     return 0;

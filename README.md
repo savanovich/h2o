@@ -7,7 +7,7 @@ Copyright (c) 2014,2015 [DeNA Co., Ltd.](http://dena.com/), [Kazuho Oku](https:/
 
 H2O is a very fast HTTP server written in C.  It can also be used as a library.
 
-This is the README for H2O version 1.1.1-alpha1 (HEAD).
+This is the README for H2O version 1.1.2-alpha1 (HEAD).
 
 ### License
 
@@ -67,6 +67,14 @@ $ cmake -DCMAKE_INSTALL_PREFIX=/usr/local .
 $ make
 $ sudo make install
 ```
+If your meet the error:Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the
+  system variable OPENSSL_ROOT_DIR (missing: OPENSSL_LIBRARIES)
+
+Type and run the command below.
+```
+$ cmake -DOPENSSL_ROOT_DIR=/usr/local/ssl -DOPENSSL_LIBRARIES=/usr/local/ssl/lib
+```
+then rerun the commands before.
 
 Type `make test` to run the unit tests (note that extra components are required for running the tests; a complete list of prerequisites can be found in the `before_script` section of [.travis.yml](https://github.com/h2o/h2o/blob/master/.travis.yml)).
 
